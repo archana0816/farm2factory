@@ -1,0 +1,39 @@
+.admin-combined {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.admin-main-content {
+  display: flex;
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.admin-sidebar {
+  width: 250px;
+  transition: width 0.3s ease;
+}
+
+.admin-combined.sidebar-open .admin-main-content .admin-content {
+  margin-left: 250px; /* Adjust margin when the sidebar is open */
+}
+
+.admin-combined:not(.sidebar-open) .admin-main-content .admin-content {
+  margin-left: 0; /* No margin when the sidebar is closed */
+}
+
+.admin-combined.sidebar-open .admin-sidebar {
+  width: 250px; /* Sidebar width when open */
+}
+
+.admin-combined:not(.sidebar-open) .admin-sidebar {
+  width: 0; /* Sidebar width when closed */
+  overflow: hidden; /* Hide the sidebar content when closed */
+}

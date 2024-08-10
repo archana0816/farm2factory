@@ -1,0 +1,214 @@
+.admin-dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.admin-left-section {
+    flex: 2;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-top-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-greeting {
+    margin-bottom: 20px;
+}
+
+.admin-greeting h1 {
+    font-size: 24px;
+}
+
+.admin-greeting .name {
+    color: #26620e
+}
+.admin-parastyle{
+    color: #26620e;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.admin-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-stat {
+    text-align: center;
+}
+
+.admin-stat h2 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.admin-bottom-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.admin-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.admin-earnings-breakdown,
+.admin-sales-graph {
+    height: 200px;
+    color: #4a984a;
+}
+
+.admin-right-section .admin-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.admin-right-section .admin-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.admin-right-section .admin-title {
+    font-size: 16px;
+    color:#26620e;
+    margin-bottom: 10px;
+}
+
+.admin-right-section .admin-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.admin-right-section .admin-sub-value {
+    font-size: 14px;
+    color: #888;
+}
+
+.admin-right-section .admin-percentage {
+    font-size: 14px;
+    color: #4a984a;
+}
+
+.admin-right-section .admin-percentage.increase {
+    color: #4a984a
+}
+
+.admin-right-section .admin-percentage.decrease {
+    color: red;
+}
+
+.admin-revenue-customers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.admin-card1 {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.admin-text {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.admin-text1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.admin-increase1 {
+    color: green;
+    font-size: 14px;
+}
+
+.admin-decrease1 {
+    color: red;
+    font-size: 14px;
+}
+
+.admin-progress-bar-container {
+    position: relative;
+    margin-top: 10px;
+}
+
+.admin-progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.admin-progress {
+    height: 100%;
+    background-color:#4a984a;
+    border-radius: 5px;
+}
+
+.admin-progress-percentage {
+    position: absolute;
+    right: 10px;
+    top: -20px; /* Adjust based on your layout */
+    font-size: 14px;
+    color: #4a984a;
+}
+
+
+.sales-graph-container {
+    margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+    .admin-dashboard-container {
+        flex-direction: column;
+    }
+
+    .admin-left-section,
+    .admin-right-section {
+        flex: none;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .admin-cards-container {
+        flex-direction: column;
+    }
+}

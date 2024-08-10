@@ -1,0 +1,47 @@
+/* Styles scoped to the BuyerCombine component */
+.buyer-combine-body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.buyer-combine-app {
+  text-align: center;
+}
+
+.buyer-combine-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buyer-combine-card {
+  cursor: pointer;
+  margin: 10px;
+}
+
+.buyer-combine-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.buyer-combine-card.active img {
+  border: 2px solid blue;
+}
+
+.buyer-combine-additional-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buyer-combine-additional-card {
+  margin: 10px;
+}
+
+.buyer-combine-additional-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}

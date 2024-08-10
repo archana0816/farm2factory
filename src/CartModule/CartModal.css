@@ -1,0 +1,139 @@
+/* CartModal.css */
+
+.cart-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.cart-modal-content {
+  margin-left: 40px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.cart-items {
+  width: 60%;
+  max-height: 400px; /* Set a max height to make it scrollable */
+  overflow-y: auto;
+  padding-right: 10px; /* Add padding to avoid scrollbar overlaying content */
+  position: relative;
+}
+
+.cart-summary {
+  width: 35%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.item-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.item-info img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.item-price {
+  margin-right: 20px;
+}
+
+.remove-item {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+
+
+.checkout-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+  position: sticky;
+  bottom: 0;
+}
+
+.close-btn {
+  position: absolute;
+  color: red;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.summary-details,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.cart-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.coupon {
+  width: 350px;
+  height: 40px;
+  margin-top: 15px;
+  margin-left: 10px;
+  background-color: #4a984a;
+  border: 1px solid #4a984a;
+  border-radius: 15px;
+  color: white;
+}

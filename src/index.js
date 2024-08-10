@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import 'bootstrap/dst/css/bootstrap.css';
 import reportWebVitals from './reportWebVitals';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import 'antd/dist/reset.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+// import Seller from './SellerModule/Seller';
+import App from './App';
+import SellerProfile from './SellerModule/SellerProfile';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
+  <React.StrictMode> 
+      <App />
+     {/* <SellerProfile/> */}
   </React.StrictMode>
 );
 

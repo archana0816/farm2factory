@@ -1,0 +1,133 @@
+*{
+  outline: none;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}  
+
+.card4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 15px; /* Rounded corners */
+  background-color: white;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: transform 0.3s ease, border 0.3s ease;
+  border: 3px solid transparent; /* Default border */
+  outline: none; /* Remove default focus outline */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.card4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px; /* Match card's rounded corners */
+}
+
+.card4:focus {
+  outline: none; /* Ensure focus outline is removed */
+}
+
+.card4.active {
+  transform: scale(1.1); /* Slightly enlarge the active card */
+  border: 3px solid #26620E; /* Green border color for the active card */
+}
+
+.buyer-additional-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px; /* Adjust max-width as needed */
+}
+
+.buyer-additional-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2.3px solid #26620E;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);/* Shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  cursor: pointer; /* Pointer cursor on hover */
+  animation: fadeIn 0.7s ease-in-out; 
+}
+
+.buyer-additional-card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 8px 16px #26620E; /* Stronger shadow on hover */
+}
+
+.buyer-additional-cards-title {
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #26620E; /* Customize as needed */
+}
+
+.buyer-additional-card img {
+  width: 100%; /* Make sure image fits the card */
+  height: 250px;
+  border-radius: 15px 15px 0 0; /* Rounded corners for the top of the image */
+}
+
+.buyer-additional-card p {
+  margin-top: 10px;
+}
+
+.buyer-pp{
+  font-size: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .buyer-additional-cards {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  }
+}
+
+@media (max-width: 900px) {
+  .buyer-additional-cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .buyer-additional-cards {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+}

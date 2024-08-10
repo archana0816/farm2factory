@@ -1,0 +1,244 @@
+.about-us {
+    font-family: Arial, sans-serif;
+    color: #26620e;
+    margin-top: 20px;
+  }
+  
+  .aboutus-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .aboutus-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .aboutus-subtitle {
+    font-size: 1.2em;
+    color: #666;
+    margin: 0;
+  }
+  
+  .history-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: gray;
+    margin: 25px;
+    text-align: justify;
+  }
+  
+  .history-left,
+  .history-right {
+    width: 48%; /* Adjust the width as needed */
+  }
+  
+  .history-left p,
+  .history-right p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  .aboutus-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .aboutus-image {
+    flex: 1 1 auto; /* Allow images to grow and shrink */
+    max-width: 23%;
+    height:200px; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .new-history{
+    color: black;
+    margin-left: 110px;
+    margin-right: 110px;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .aboutus-image {
+      max-width: 48%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aboutus-image {
+      max-width: 100%;
+    }
+  }
+  
+  .aboutus-card-image {
+    width: 100%;
+    height: 200px; /* Fixed height for the images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+  }
+
+  /* .aboutus-image {
+    width: 23%;
+    border-radius: 8px;
+  } */
+  
+  .contact-info {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .contact-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+  }
+  
+  .office-locations {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .office {
+    width: 45%;
+  }
+  
+  .office h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+  }
+  .aboutus-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Adjust the gap between cards as needed */
+    margin-left: 50px;
+  }
+  
+  .aboutus-card {
+    position: relative;
+    border: 1px solid #ddd; /* Optional border for better card visibility */
+    border-radius: 8px; /* Rounded corners for the cards */
+    overflow: hidden; /* Hide any overflow from child elements */
+    width: 300px; /* Fixed width for each card */
+    cursor: pointer; /* Pointer cursor for better UX */
+    margin-left: 100px;
+  }
+  
+  .aboutus-card-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Fixed height for the image container */
+    overflow: hidden; /* Hide any overflow from the image */
+  }
+  
+  .aboutus-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for the hover effect */
+  }
+  
+  .aboutus-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; /* Hide the overlay by default */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for the overlay */
+  }
+  
+  .aboutus-card:hover .aboutus-card-overlay {
+    opacity: 1; /* Show the overlay on hover */
+  }
+  
+  .aboutus-card-title {
+    margin: 0;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  
+  .aboutus-card-description {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+
+  .accordion {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .accordian-style{
+    text-align: left;
+    margin-left: 150px;
+    color: #26620e;
+  }
+  
+  .accordion-item {
+    border: none;
+    margin: 10px 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-title span:first-child {
+    flex-grow: 1;
+  }
+  
+  .accordion-title span:last-child {
+    font-size: 1.5em;
+    color: #999;
+  }
+  
+  .accordion-title:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .accordion-content {
+    padding: 20px;
+    background-color: #fff;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    display: none;
+  }
+  
+  .accordion-active .accordion-title {
+    background-color: #f1f1f1;
+  }
+  
+  .accordion-active .accordion-content {
+    display: block;
+  }
+  
+  .accordion-active .accordion-title span:last-child {
+    content: '-';
+    font-size: 1.5em;
+    color: #333;
+  }
+  

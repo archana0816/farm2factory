@@ -1,0 +1,63 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #26620E;
+    height: 60px;
+  }
+  .profileIcon{
+    color:white;
+  }
+  .appName {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-left: 15px;
+  }
+  
+  .navItems {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .navLink {
+    margin-right: 20px;
+    text-decoration: none;
+    color: White;
+  }
+  
+  .navLink:hover{
+    color:black;
+  }
+  
+
+  .profileIcon {
+    position: relative;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .dropdownItem {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #f1f1f1;
+  }

@@ -1,0 +1,30 @@
+.admin-navbar {
+    display: flex;
+    width: 100%;
+    height: 65px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #26620e;
+    color: #fff;
+    position: fixed; /* Ensure relative positioning to place children absolutely */
+    z-index: 1000;
+  }
+  
+  .hamburger-icon {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    left: 10px; /* Position the icon 10px from the left edge */
+    top: 10px;   /* Position the icon 10px from the top edge */
+  }
+  
+  .admin-navbar h3 {
+    padding-top: 15px;
+    margin-left: 45px; /* Remove default margin for better alignment */
+    font-size: 28px;
+  }
+  
